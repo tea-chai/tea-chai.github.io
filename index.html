@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+<html lang="en">
+<head>
+  <title>Kamil Erdayandı's Personal Homepage</title>
+  <link rel="icon" href="profile-picture.jpeg" type="image/icon type">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ----------------  STYLES  ---------------- -->
+  <style>
+
+    .center-brand {
+      float: none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar-nav.navbar-center > li > a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    /* Center navbar items horizontally */
+    .navbar-nav.navbar-center {
+      float: none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+
+
+    html {
+      scroll-padding-top: 90px; /* Matches or slightly exceeds navbar height */
+      scroll-behavior: smooth; /* Optional: smooth scroll effect */
+    }
+
+    ul#links li {
+      display: inline;
+      padding: 10px;
+    }
+
+    a.tlk:link, a.tlk:visited, .tlk {
+      background-color: #3bc987;
+    }
+
+    .model-box {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 60%; /* This is your aspect ratio */
+    }
+
+    .model-prebox {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 40%; /* This is your aspect ratio */
+    }
+
+    .model {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: gray;
+      color: white;
+      text-align: center;
+    }
+
+    /* Ensure navbar has enough height */
+    .navbar-nav {
+      display: flex;
+      align-items: center; /* vertical centering */
+      height: 100%;
+    }
+
+    /* Style each <li> and its content */
+    .navbar-nav > li {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar-nav > li > a,
+    .navbar-nav > li > span,
+    .navbar-nav > li > div {
+      display: flex;
+      align-items: center;
+      height: 50px; /* match Bootstrap's navbar height */
+      padding: 0 15px;
+    }
+
+    /* Fix default Bootstrap nav-item spacing */
+    .navbar-nav > li > a {
+      line-height: normal;
+    }
+    body {
+      padding-top: 70px; /* adjust this value to match navbar height */
+    }
+  </style>
+
+  <!-- ----------------  LIBRARIES  ---------------- -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="z-index:1000;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand center-brand">Kamil ERDAYANDI</span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#publications">Publications</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ==================================================
+     PAGE CONTENT
+================================================== -->
+<div class="container">
+  <div class="row">
+    <!-- ================ LEFT COLUMN (PHOTO & CONTACT) ================ -->
+    <div class="col-md-3">
+      <img class="img-responsive" src="kamilerdayandi.png" height="300" width="300" alt="Profile Picture"><br>
+      <ul id="links">
+        <li><a href="https://www.linkedin.com/in/kamil-erdayandi-b4245739/"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:black"></i></a></li>
+        <li><a href="https://github.com/tea-chai/"><i class="fa fa-github fa-2x" aria-hidden="true" style="color:black"></i></a></li>
+      </ul>
+      <p>
+        <b>Email:</b> kamil.erdayandi<i class="fa fa-at"></i>marmara<i class="fa fa-circle" aria-hidden="true" style="font-size:3px;"></i>edu<i class="fa fa-circle" aria-hidden="true" style="font-size:3px;"></i>tr<br>
+        <b>Office No:</b> M2-232<br>
+        <b>Office Tel:</b> +90 216 777 35 35
+      </p>
+      <dd><a href="https://scholar.google.com/citations?user=yyc5wNIAAAAJ&hl" target="_blank">Google Scholar</a></dd>
+      <div itemscope itemtype="https://schema.org/Person">
+        <a itemprop="sameAs" content="https://orcid.org/0000-0001-9507-662X" href="https://orcid.org/0000-0001-9507-662X" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;">
+          <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-9507-662X
+        </a>
+      </div>
+    </div>
+
+    <!-- ================ RIGHT COLUMN (CONTENT) ================ -->
+    <div class="col-md-9">
+
+      <!-- ---------- INTRODUCTION ---------- -->
+      <div class="row">
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="intro"><b>Introduction</b></div>
+        <p>
+          <br>
+          Kamil Erdayandı is a Faculty Member in the <a href="https://cse-eng.marmara.edu.tr/">Computer Engineering Department</a> at <a href="https://www.marmara.edu.tr/">Marmara University</a>.
+          <br><br>
+          He obtained his Ph.D. in Computer Science from <a href="https://www.manchester.ac.uk/">The University of Manchester</a>, under the supervision of <a href="https://research.manchester.ac.uk/en/persons/mustafa.mustafa">Dr. Mustafa A. Mustafa</a>. His thesis was titled "Privacy-Preserving Trading in Local Energy Markets".
+          He then worked as a Research Associate on the <a href="https://enncore.github.io/">EnnCore Project</a>, within the <a href="https://www.cs.manchester.ac.uk/research/expertise/systems-and-software-security/">Systems and Software Security</a> research group at <a href="https://www.manchester.ac.uk/">The University of Manchester</a>.
+          <br><br>
+          His research interests include Data Privacy, Applied Cryptography, Multiagent Systems, Energy Trading, Federated Learning and Blockchain.
+        </p>
+      </div>
+
+      <!-- ---------- LATEST NEWS ---------- -->
+      <div class="row" style="margin-bottom:0.5cm;">
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Latest News (June 2025)</b></div>
+        <ul>
+          <li>I'll be serving as a co-chair in Energy track at ICDLT'25</li>
+        </ul>
+      </div>
+
+      <!-- ---------- TEACHING ---------- -->
+      <div class="row" id="teaching">
+          <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Teaching</b></div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-size: 15px; font-weight: bold;">Current:</div>
+            <ul>
+              <li><b>Lecturer @ Marmara University: </b>EE2032 Electronics, CSE4095 Special Topics in Computer Engineering III (Multi-Agent Systems)</li>
+            </ul>
+          </div>
+          
+          <div style="margin-top: 10px;">
+            <div style="font-size: 15px; font-weight: bold;">Previous:</div>
+            <ul>
+              <li><b>Teaching Assistant @ The University of Manchester: </b>COMP61411 Cryptography, COMP34612 Computational Game Theory, COMP34111 AI and Games, COMP63342 Software Security, COMP61011 Foundations of Machine Learning, COMP60532 Principles of Digital Biology, COMP60542 Introduction to Health Informatics, COMP26020 Programming Languages & Paradigms, COMP26120 Algorithms and Data Structures, COMP32412 The Internet of Things, COMP24412 Knowledge Based AI</li>
+              <li><b>Teaching Assistant @ Yıldız Technical University: </b>BLM1612 Circuit Theory, BLM2622 Electronic Circuits, BLM 2611 Logic Circuits, BLM 4920 Real-Time Computer Systems, BLM3621 Microprocessors</li>
+            </ul>
+          </div>
+        </div>
+
+        
+      <!-- ---------- POSITIONS / AWARDS ---------- -->
+      <!--  
+      <div class="row">
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Notable Positions, Awards, and Recognitions</b></div>
+        <br>
+        <p>Under Construction</p>  
+        <ul>
+          <li><b>[2024] —</b> PC Member, Sth 2025.</li>
+            </ul>
+      </div>
+       --> 
+
+      <!-- ---------- PUBLICATIONS ---------- -->
+      <div class="row">
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;" id="publications"><b>Publications ‑ Peer Reviewed & Published</b></div>
+        <p>Under Construction</p>
+      </div>
+
+      <div class="row">
+        <br>
+        <div style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Preprints, Datasets, Misc.</b></div>
+        <p>Under Construction</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br>    
+      </div>
+
+    </div> <!-- /col-md-9 -->
+  </div> <!-- /row -->
+
+  <!-- ==================================================
+       FOOTER
+  ================================================== -->
+  <div class="footer">
+    Content Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+    Kamil Erdayandı &mdash; All rights reserved | Template: <a style="color:#ebeff3;font-size:0.8em;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+  </div>
+</div> <!-- /.container -->
+
+</body>
+</html>
